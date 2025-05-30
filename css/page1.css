@@ -1,0 +1,206 @@
+/* Start Variable*/
+:root{
+    --main-color:rgb(12, 42, 67);
+    --second-color:rgb(253, 235, 77);
+    --transparent-color:rgb(15 116 143 / 70%);
+    --section-padding:100px;
+}
+/* End Variable*/
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* small */
+@media (min-width : 768px){
+    .container{
+        width:750px;
+    }
+}
+/* mediam */
+@media (min-width : 992px){
+    .container{
+        width : 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+/* End Global Rules */
+
+body {
+    background-color: rgb(0, 238, 255);
+    background-color: var(--main-color);
+    
+}
+.logo img{
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 250px;
+    height: 100px;
+}
+@media(max-width:768px){
+    .logo img{
+        margin-top: 20px;
+        margin-right: 0;
+        width: 140px;
+        height: 70px;
+    }
+}
+.head{
+    position: relative;
+}
+.head .content{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+}   
+.head .content h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 53px;
+    margin-bottom: 3px;
+}
+.head .content h1 .mark{
+    color: var(--second-color);
+}
+@media(max-width:768px){
+    .head .content h1{
+        font-size: 27px;
+        margin-top: 60px;
+    }
+}
+.head .content p{
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* Start Next Buttion */
+.next-button{
+    position: absolute;
+    text-decoration: none;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 10px;
+    padding:10px 15px;
+    bottom:9%;
+    right:150px
+    
+}
+@media (max-width:768px){
+    .link{
+        position: absolute;
+        text-decoration: none;
+        color: var(--main-color);
+        font-weight: bold;
+        border-radius: 10px;
+        padding:10px 15px;
+        left:50%;
+        transform: translateX(-50%);
+        bottom:-560px;
+        width: 150px;
+        height: 100px;
+    }
+}
+@media (max-width:768px){
+    .link .next-button{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        margin-bottom: 15px;
+        box-shadow: 2px 2px 15px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.color-key{
+  color:white;
+  width:40%;
+  display: flex;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding:5px 0;
+}
+@media(max-width:768px){
+    .color-key{
+        bottom: -15px;
+        width: fit-content;
+    }
+    .color-key .content-box{
+        text-align: center;
+    }
+}
+/* @media(max-width:400px){
+    .color-key{
+        bottom:-15px;
+    }
+} */
+.color-key .content-box{
+    margin:0 5px;
+    width: 100%;
+
+}
+@media (max-width:768px){
+    .color-key .content-box i{
+        margin-bottom: 6px;
+    }
+    .color-key .content-box p{
+        text-align: center;
+    }
+}
+.color-key .content-box:nth-child(1) i{
+  color: var(--Tlnted-Holiday);
+}
+.color-key .content-box:nth-child(2) i{
+  color: var(--Client-Holiday);
+}
+.color-key .content-box:nth-child(3) i{
+  color: var(--Bank-Holiday);
+}
+.color-key .content-box:nth-child(4) i{
+  color: var(--Christmas-Holiday);
+}
+
+.color-key .content-box i{
+  font-size: 20px;
+}
+.color-key .content-box p {
+  padding-left: 10px;
+  display: inline;
+}
+
+
